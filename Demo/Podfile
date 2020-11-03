@@ -1,0 +1,54 @@
+source 'git@git.musjoy.com:PodSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+inhibit_all_warnings!
+#platform :ios, '10.0'
+
+
+
+target 'PromotionKit' do
+#  use_frameworks!
+
+    pod 'ModuleCapability', '~> 0.1.14'   # 常用模块的宏定义
+    pod 'WebInterface', '~> 0.1.22' # 与自己服务器交互的网络请求
+end
+
+
+
+post_install do |installer_representation|
+    
+    # 读取项目名称
+    firstAggregateTarget = installer_representation.aggregate_targets.first
+    
+    # 读取用户中多出来的宏定义
+    the_user_config =  firstAggregateTarget.xcconfigs.first.last
+    a_gcc_config = the_user_config.attributes['GCC_PREPROCESSOR_DEFINITIONS']
+    the_gcc_config = a_gcc_config.split("COCOAPODS=1 ")[1]
+    the_framework_search_paths = the_user_config.attributes['FRAMEWORK_SEARCH_PATHS']
+    
+    the_build_setting = {
+        'GCC_PREPROCESSOR_DEFINITIONS' => the_gcc_config,
+        'HEADER_SEARCH_PATHS' => "\"$(PROJECT_DIR)/../Public\"",
+        'FRAMEWORK_SEARCH_PATHS' => the_framework_search_paths
+    }
+    
+    # 将这些宏定义应用于其它target
+    installer_representation.pod_targets.sort_by(&:name).each do |target|
+        
+        # 跳过没有不需要编译的target
+        next if target.target_definitions.flat_map(&:dependencies).empty?
+        next if !target.should_build?
+        
+        # 重新保存每个pod target
+        build_settings = target.build_settings
+        build_settings.each do |configration|
+            path = target.xcconfig_path(configration[0])
+            build_setting = configration[1]
+            xcconfig = build_setting.xcconfig
+            xcconfig.merge!(the_build_setting)
+            xcconfig.save_as(path)
+        end
+    end
+    
+end
+
+

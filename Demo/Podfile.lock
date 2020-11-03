@@ -1,0 +1,46 @@
+PODS:
+  - ActionProtocol (0.1.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - MJWebService (0.1.29):
+    - AFNetworking/NSURLSession (~> 3)
+    - ModuleCapability (~> 0.1)
+  - ModuleCapability (0.1.14)
+  - WebInterface (0.1.22):
+    - ActionProtocol (~> 0.1)
+    - MJWebService (~> 0.1)
+    - ModuleCapability (~> 0.1)
+    - WebInterface/Core (= 0.1.22)
+  - WebInterface/Core (0.1.22):
+    - ActionProtocol (~> 0.1)
+    - MJWebService (~> 0.1)
+    - ModuleCapability (~> 0.1)
+
+DEPENDENCIES:
+  - ModuleCapability (~> 0.1.14)
+  - WebInterface (~> 0.1.22)
+
+SPEC REPOS:
+  "git@git.musjoy.com:PodSpecs.git":
+    - ActionProtocol
+    - MJWebService
+    - ModuleCapability
+    - WebInterface
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+
+SPEC CHECKSUMS:
+  ActionProtocol: 2331f4c31d5be0786c248920fceece0234cfe07f
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  MJWebService: 3dae6640a1d64b8409506bd5e5930c56566b2ab6
+  ModuleCapability: f8ec79e6e65d096a02f8eb562b5db80b2f21a2ca
+  WebInterface: 40066829934705ab85e4b51d3fd1f5ca19b03804
+
+PODFILE CHECKSUM: 6d8bb31f96a1fc0727158c3b87945aebafe999e8
+
+COCOAPODS: 1.9.3
