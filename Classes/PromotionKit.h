@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 实例化
 + (instancetype)sharedInstance;
 
+- (void)showVC;
 @end
 
 NS_ASSUME_NONNULL_END

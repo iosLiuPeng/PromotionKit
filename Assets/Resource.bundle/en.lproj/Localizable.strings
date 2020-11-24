@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  PromotionKit
+
+  Created by 刘鹏 on 20/7/3.
+  Copyright © 2020年 IGUAPPS. All rights reserved.
+  Luanguage Name : 英语
+*/
+
+
+/** Coment */
+"cancel" = "Cancel";
+"confirm" = "Confirm";
+"ok" = "OK";
+
+/** Share Friend */
+"share_friend_give_1" = "Helping friends successfully";
+"share_friend_give_2" = "Friends have received %@ coins";
+"share_friend_give_3" = "You can also invite friends to help you get coins";
+"share_friend_give_btn" = "OK";

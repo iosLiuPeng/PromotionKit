@@ -10,17 +10,23 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
 
   s.subspec 'Core' do |ss|
-    ss.source_files = 'Classes/Core/*.{h,m}'
+    ss.source_files = 'Classes/*','Classes/Model/*','Classes/View/*','Classes/Controller/*'
     ss.resources = ["Assets/*"]
   end
 
   
   s.default_subspec = 'Core'
 
-  # s.frameworks = 'UIKit'
+  s.dependency 'WebInterface'
+  s.dependency 'MJControllerManager'
+  s.dependency 'MJIAPKit'
+  s.dependency 'MJSecurity'
+  s.dependency 'MJLocalization/Bundle'
 
-  # s.user_target_xcconfig = {
-  #       'GCC_PREPROCESSOR_DEFINITIONS' => 'MODULE_PUSH_KIT'
-  # }
+  s.frameworks = 'UIKit'
+
+  s.user_target_xcconfig = {
+        'GCC_PREPROCESSOR_DEFINITIONS' => 'MODULE_PROMOTION_KIT'
+  }
 
 end

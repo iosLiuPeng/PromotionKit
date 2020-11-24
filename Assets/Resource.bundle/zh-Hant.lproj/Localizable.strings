@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  PromotionKit
+
+  Created by 刘鹏 on 20/7/3.
+  Copyright © 2020年 IGUAPPS. All rights reserved.
+  Luanguage Name : 繁体
+*/
+
+
+/** Coment */
+"cancel" = "取消";
+"confirm" = "確定";
+"ok" = "好的";
+
+/** Share Friend */
+"share_friend_give_1" = "成功幫好友助力";
+"share_friend_give_2" = "好友已領取%@金幣";
+"share_friend_give_3" = "您也可邀請好友幫妳助力得金幣";
+"share_friend_give_btn" = "知道啦";

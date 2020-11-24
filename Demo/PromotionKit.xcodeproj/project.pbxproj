@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,10 +11,8 @@
 		463D317625510C53001DDEB5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D317525510C53001DDEB5 /* SceneDelegate.m */; };
 		463D317925510C53001DDEB5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D317825510C53001DDEB5 /* ViewController.m */; };
 		463D317C25510C53001DDEB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463D317A25510C53001DDEB5 /* Main.storyboard */; };
-		463D317E25510C56001DDEB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 463D317D25510C56001DDEB5 /* Assets.xcassets */; };
 		463D318125510C56001DDEB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463D317F25510C56001DDEB5 /* LaunchScreen.storyboard */; };
 		463D318425510C56001DDEB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D318325510C56001DDEB5 /* main.m */; };
-		463D319B25510D47001DDEB5 /* PromotionKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D319925510D47001DDEB5 /* PromotionKit.m */; };
 		B4A06ABEBAAAA73DFC2B2250 /* libPods-PromotionKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F15FBD16E07A74EBB7A0C736 /* libPods-PromotionKit.a */; };
 /* End PBXBuildFile section */
 
@@ -26,13 +24,13 @@
 		463D317525510C53001DDEB5 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		463D317725510C53001DDEB5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		463D317825510C53001DDEB5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		463D317B25510C53001DDEB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		463D317D25510C56001DDEB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		463D318025510C56001DDEB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		463D318225510C56001DDEB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		463D318325510C56001DDEB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		463D319925510D47001DDEB5 /* PromotionKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromotionKit.m; sourceTree = "<group>"; };
-		463D319A25510D47001DDEB5 /* PromotionKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromotionKit.h; sourceTree = "<group>"; };
+		463D319F255110E0001DDEB5 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		46946E4C25540AE500DF861E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46946E4D25540B4700DF861E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46946EC6255410E200DF861E /* PromotionKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PromotionKit.entitlements; sourceTree = "<group>"; };
 		59CACF59D973B29E09512341 /* Pods-PromotionKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromotionKit.debug.xcconfig"; path = "Target Support Files/Pods-PromotionKit/Pods-PromotionKit.debug.xcconfig"; sourceTree = "<group>"; };
 		AB8F824464E89AA5FD310B0D /* Pods-PromotionKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromotionKit.release.xcconfig"; path = "Target Support Files/Pods-PromotionKit/Pods-PromotionKit.release.xcconfig"; sourceTree = "<group>"; };
 		F15FBD16E07A74EBB7A0C736 /* libPods-PromotionKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PromotionKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,12 +69,12 @@
 		463D317025510C53001DDEB5 /* PromotionKit */ = {
 			isa = PBXGroup;
 			children = (
+				46946EC6255410E200DF861E /* PromotionKit.entitlements */,
 				463D317125510C53001DDEB5 /* AppDelegate.h */,
 				463D317225510C53001DDEB5 /* AppDelegate.m */,
 				463D317425510C53001DDEB5 /* SceneDelegate.h */,
 				463D317525510C53001DDEB5 /* SceneDelegate.m */,
-				463D319725510D47001DDEB5 /* Assets */,
-				463D319825510D47001DDEB5 /* Classes */,
+				463D319F255110E0001DDEB5 /* Constant.h */,
 				463D317725510C53001DDEB5 /* ViewController.h */,
 				463D317825510C53001DDEB5 /* ViewController.m */,
 				463D317A25510C53001DDEB5 /* Main.storyboard */,
@@ -86,24 +84,6 @@
 				463D318325510C56001DDEB5 /* main.m */,
 			);
 			path = PromotionKit;
-			sourceTree = "<group>";
-		};
-		463D319725510D47001DDEB5 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Assets;
-			path = ../../Assets;
-			sourceTree = "<group>";
-		};
-		463D319825510D47001DDEB5 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				463D319A25510D47001DDEB5 /* PromotionKit.h */,
-				463D319925510D47001DDEB5 /* PromotionKit.m */,
-			);
-			name = Classes;
-			path = ../../Classes;
 			sourceTree = "<group>";
 		};
 		58A33F73A31C20EDC298272E /* Frameworks */ = {
@@ -134,6 +114,7 @@
 				463D316A25510C53001DDEB5 /* Sources */,
 				463D316B25510C53001DDEB5 /* Frameworks */,
 				463D316C25510C53001DDEB5 /* Resources */,
+				46946ED32554124600DF861E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,7 +162,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				463D318125510C56001DDEB5 /* LaunchScreen.storyboard in Resources */,
-				463D317E25510C56001DDEB5 /* Assets.xcassets in Resources */,
 				463D317C25510C53001DDEB5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +169,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		46946ED32554124600DF861E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PromotionKit/Pods-PromotionKit-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PromotionKit/Pods-PromotionKit-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PromotionKit/Pods-PromotionKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		61C3054A5DAEECB179E71322 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,7 +217,6 @@
 			files = (
 				463D317925510C53001DDEB5 /* ViewController.m in Sources */,
 				463D317325510C53001DDEB5 /* AppDelegate.m in Sources */,
-				463D319B25510D47001DDEB5 /* PromotionKit.m in Sources */,
 				463D318425510C56001DDEB5 /* main.m in Sources */,
 				463D317625510C53001DDEB5 /* SceneDelegate.m in Sources */,
 			);
@@ -232,7 +228,7 @@
 		463D317A25510C53001DDEB5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				463D317B25510C53001DDEB5 /* Base */,
+				46946E4D25540B4700DF861E /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -240,7 +236,7 @@
 		463D317F25510C56001DDEB5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				463D318025510C56001DDEB5 /* Base */,
+				46946E4C25540AE500DF861E /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -252,6 +248,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -311,6 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -366,9 +364,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PromotionKit/PromotionKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7F7ZSV95HX;
 				INFOPLIST_FILE = PromotionKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,9 +385,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PromotionKit/PromotionKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7F7ZSV95HX;
 				INFOPLIST_FILE = PromotionKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

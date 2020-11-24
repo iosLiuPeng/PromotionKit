@@ -8,8 +8,14 @@ inhibit_all_warnings!
 target 'PromotionKit' do
 #  use_frameworks!
 
-    pod 'ModuleCapability', '~> 0.1.14'   # 常用模块的宏定义
-    pod 'WebInterface', '~> 0.1.22' # 与自己服务器交互的网络请求
+    pod 'ModuleCapability'    # 常用模块的宏定义
+    pod 'WebInterface'        # 与自己服务器交互的网络请求
+    pod 'MJControllerManager' # 控制器管理
+    pod 'MJIAPKit'            # app内购
+    pod 'MJSecurity'          # 加密
+    pod 'MJLocalization/Bundle'
+    
+    pod 'PromotionKit', :path => '../'
 end
 
 

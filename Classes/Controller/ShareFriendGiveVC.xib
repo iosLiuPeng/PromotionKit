@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShareFriendGiveVC">
+            <connections>
+                <outlet property="lblGetCoins" destination="QPJ-4R-DlP" id="u4r-Km-A3j"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KAF-CI-sFo" userLabel="View bg">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbl-dq-0Hs" customClass="PIBView">
+                            <rect key="frame" x="41.5" y="247" width="331" height="324"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PromotionKit/share_gift" translatesAutoresizingMaskIntoConstraints="NO" id="t8S-Wz-Mpe">
+                                    <rect key="frame" x="71" y="-96.5" width="189" height="173"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="t8S-Wz-Mpe" secondAttribute="height" multiplier="181:166" id="Dv1-df-mo8"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="成功帮好友助力" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiQ-p9-IpF" customClass="PIBLabel">
+                                    <rect key="frame" x="20" y="96.5" width="291" height="26.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="locText" value="share_friend_give_1"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好友已领取20金币" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPJ-4R-DlP">
+                                    <rect key="frame" x="20" y="133" width="291" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.58039215686274503" green="0.062745098039215685" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您也可邀请好友帮你助力得金币" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjJ-kI-JXA" customClass="PIBLabel">
+                                    <rect key="frame" x="20" y="203.5" width="291" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="locText" value="share_friend_give_3"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oK-96-6aZ" userLabel="View btn" customClass="PIBView">
+                                    <rect key="frame" x="66" y="244" width="199" height="50"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XkE-Hs-hJE" userLabel="View" customClass="PGradientView">
+                                            <rect key="frame" x="0.0" y="0.0" width="199" height="50"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="beginColor">
+                                                    <color key="value" red="0.98431372549019602" green="0.043137254901960784" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                    <color key="value" red="0.99607843137254903" green="0.44705882352941173" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                                                    <integer key="value" value="0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="知道啦" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FBR-1f-bDg" customClass="PIBLabel">
+                                            <rect key="frame" x="20" y="0.0" width="159" height="50"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="locText" value="share_friend_give_btn"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="249" verticalCompressionResistancePriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuW-bM-8wX">
+                                            <rect key="frame" x="0.0" y="0.0" width="199" height="50"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal">
+                                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <state key="highlighted" backgroundImage="PromotionKit/btn_bg"/>
+                                            <connections>
+                                                <action selector="clickedOK:" destination="-1" eventType="touchUpInside" id="qSS-3e-xJA"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="JuW-bM-8wX" firstAttribute="leading" secondItem="5oK-96-6aZ" secondAttribute="leading" id="1RP-m5-fbf"/>
+                                        <constraint firstAttribute="trailing" secondItem="XkE-Hs-hJE" secondAttribute="trailing" id="1i5-Yn-TmM"/>
+                                        <constraint firstItem="XkE-Hs-hJE" firstAttribute="leading" secondItem="5oK-96-6aZ" secondAttribute="leading" id="7sX-Au-bsS"/>
+                                        <constraint firstAttribute="bottom" secondItem="JuW-bM-8wX" secondAttribute="bottom" id="Dhr-lu-lPr"/>
+                                        <constraint firstAttribute="bottom" secondItem="XkE-Hs-hJE" secondAttribute="bottom" id="KC2-oN-jhg"/>
+                                        <constraint firstItem="JuW-bM-8wX" firstAttribute="top" secondItem="5oK-96-6aZ" secondAttribute="top" id="QWb-ct-GLp"/>
+                                        <constraint firstAttribute="trailing" secondItem="JuW-bM-8wX" secondAttribute="trailing" id="UzP-Kr-Dcu"/>
+                                        <constraint firstItem="FBR-1f-bDg" firstAttribute="leading" secondItem="5oK-96-6aZ" secondAttribute="leading" constant="20" id="cPu-cV-e5Y"/>
+                                        <constraint firstAttribute="bottom" secondItem="FBR-1f-bDg" secondAttribute="bottom" id="fIa-ua-v7l"/>
+                                        <constraint firstAttribute="height" constant="50" id="kIQ-tl-A8T"/>
+                                        <constraint firstItem="XkE-Hs-hJE" firstAttribute="top" secondItem="5oK-96-6aZ" secondAttribute="top" id="pEn-F7-jvB"/>
+                                        <constraint firstAttribute="trailing" secondItem="FBR-1f-bDg" secondAttribute="trailing" constant="20" id="vT0-RI-Olh"/>
+                                        <constraint firstItem="FBR-1f-bDg" firstAttribute="top" secondItem="5oK-96-6aZ" secondAttribute="top" id="vX5-yb-fXL"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hSemicircle" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="5oK-96-6aZ" firstAttribute="top" secondItem="bjJ-kI-JXA" secondAttribute="bottom" constant="20" id="1AT-l7-tKU"/>
+                                <constraint firstItem="bjJ-kI-JXA" firstAttribute="top" secondItem="QPJ-4R-DlP" secondAttribute="bottom" constant="50" id="C3E-Xa-ePv"/>
+                                <constraint firstAttribute="bottom" secondItem="5oK-96-6aZ" secondAttribute="bottom" constant="30" id="CYA-sn-Vzt"/>
+                                <constraint firstItem="fiQ-p9-IpF" firstAttribute="leading" secondItem="rbl-dq-0Hs" secondAttribute="leading" constant="20" id="Fjy-sd-HSU"/>
+                                <constraint firstItem="bjJ-kI-JXA" firstAttribute="leading" secondItem="rbl-dq-0Hs" secondAttribute="leading" constant="20" id="HGL-51-Hd1"/>
+                                <constraint firstItem="QPJ-4R-DlP" firstAttribute="leading" secondItem="rbl-dq-0Hs" secondAttribute="leading" constant="20" id="KNJ-H9-rEJ"/>
+                                <constraint firstAttribute="trailing" secondItem="QPJ-4R-DlP" secondAttribute="trailing" constant="20" id="LU5-8B-zU0"/>
+                                <constraint firstAttribute="trailing" secondItem="fiQ-p9-IpF" secondAttribute="trailing" constant="20" id="OdE-e5-udC"/>
+                                <constraint firstAttribute="trailing" secondItem="bjJ-kI-JXA" secondAttribute="trailing" constant="20" id="Oz7-Dr-KU9"/>
+                                <constraint firstItem="QPJ-4R-DlP" firstAttribute="top" secondItem="fiQ-p9-IpF" secondAttribute="bottom" constant="10" id="Wpa-rg-uGf"/>
+                                <constraint firstItem="5oK-96-6aZ" firstAttribute="centerX" secondItem="rbl-dq-0Hs" secondAttribute="centerX" id="cPs-4C-9K3"/>
+                                <constraint firstItem="t8S-Wz-Mpe" firstAttribute="centerX" secondItem="rbl-dq-0Hs" secondAttribute="centerX" id="epb-VE-qiv"/>
+                                <constraint firstItem="t8S-Wz-Mpe" firstAttribute="centerY" secondItem="rbl-dq-0Hs" secondAttribute="top" constant="-10" id="glu-Df-Bg1"/>
+                                <constraint firstItem="5oK-96-6aZ" firstAttribute="width" relation="greaterThanOrEqual" secondItem="rbl-dq-0Hs" secondAttribute="width" multiplier="0.6" id="kai-8x-th3"/>
+                                <constraint firstItem="5oK-96-6aZ" firstAttribute="width" relation="lessThanOrEqual" secondItem="rbl-dq-0Hs" secondAttribute="width" multiplier="0.8" id="pjN-tl-qck"/>
+                                <constraint firstItem="fiQ-p9-IpF" firstAttribute="top" secondItem="t8S-Wz-Mpe" secondAttribute="bottom" constant="20" id="uTZ-6f-Ud0"/>
+                                <constraint firstItem="t8S-Wz-Mpe" firstAttribute="width" secondItem="rbl-dq-0Hs" secondAttribute="width" multiplier="0.57" id="w9Q-Yp-60P"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRatio">
+                                    <real key="value" value="0.050000000000000003"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="rbl-dq-0Hs" firstAttribute="centerX" secondItem="KAF-CI-sFo" secondAttribute="centerX" id="1X1-AO-juq"/>
+                        <constraint firstItem="rbl-dq-0Hs" firstAttribute="width" secondItem="KAF-CI-sFo" secondAttribute="width" multiplier="0.8" id="pao-Hb-jQ6"/>
+                        <constraint firstItem="rbl-dq-0Hs" firstAttribute="centerY" secondItem="KAF-CI-sFo" secondAttribute="centerY" id="tyf-3V-vFo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="KAF-CI-sFo" secondAttribute="trailing" id="6HB-Kf-koE"/>
+                <constraint firstItem="KAF-CI-sFo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="6nz-wE-Uwi"/>
+                <constraint firstItem="KAF-CI-sFo" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="E5r-SL-gVs"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="KAF-CI-sFo" secondAttribute="bottom" id="Swc-1K-zoc"/>
+            </constraints>
+            <point key="canvasLocation" x="-165.21739130434784" y="150.66964285714286"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="FBR-1f-bDg">
+            <size key="intrinsicContentSize" width="61.5" height="24"/>
+        </designable>
+        <designable name="bjJ-kI-JXA">
+            <size key="intrinsicContentSize" width="243" height="20.5"/>
+        </designable>
+        <designable name="fiQ-p9-IpF">
+            <size key="intrinsicContentSize" width="156.5" height="26.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="PromotionKit/btn_bg" width="252" height="65"/>
+        <image name="PromotionKit/share_gift" width="181" height="166"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

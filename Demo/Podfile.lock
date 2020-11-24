@@ -7,10 +7,40 @@ PODS:
   - AFNetworking/Reachability (3.2.1)
   - AFNetworking/Security (3.2.1)
   - AFNetworking/Serialization (3.2.1)
+  - DBModel (0.1.26):
+    - FMDB
+    - ModuleCapability
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - MJControllerManager (0.1.9):
+    - ActionProtocol
+    - ModuleCapability (~> 0.1)
+  - MJIAPKit (0.1.6):
+    - DBModel
+    - MJLocalization/Bundle
+    - WebInterface
+  - MJLocalization/Bundle (0.1.5):
+    - MJLocalization/Language
+  - MJLocalization/Language (0.1.5)
+  - MJSecurity (0.1.4)
   - MJWebService (0.1.29):
     - AFNetworking/NSURLSession (~> 3)
     - ModuleCapability (~> 0.1)
   - ModuleCapability (0.1.14)
+  - PromotionKit (0.1.0):
+    - MJControllerManager
+    - MJIAPKit
+    - MJLocalization/Bundle
+    - MJSecurity
+    - PromotionKit/Core (= 0.1.0)
+    - WebInterface
+  - PromotionKit/Core (0.1.0):
+    - MJControllerManager
+    - MJIAPKit
+    - MJLocalization/Bundle
+    - MJSecurity
+    - WebInterface
   - WebInterface (0.1.22):
     - ActionProtocol (~> 0.1)
     - MJWebService (~> 0.1)
@@ -22,25 +52,47 @@ PODS:
     - ModuleCapability (~> 0.1)
 
 DEPENDENCIES:
-  - ModuleCapability (~> 0.1.14)
-  - WebInterface (~> 0.1.22)
+  - MJControllerManager
+  - MJIAPKit
+  - MJLocalization/Bundle
+  - MJSecurity
+  - ModuleCapability
+  - PromotionKit (from `../`)
+  - WebInterface
 
 SPEC REPOS:
   "git@git.musjoy.com:PodSpecs.git":
     - ActionProtocol
+    - DBModel
+    - MJControllerManager
+    - MJIAPKit
+    - MJLocalization
+    - MJSecurity
     - MJWebService
     - ModuleCapability
     - WebInterface
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - FMDB
+
+EXTERNAL SOURCES:
+  PromotionKit:
+    :path: "../"
 
 SPEC CHECKSUMS:
   ActionProtocol: 2331f4c31d5be0786c248920fceece0234cfe07f
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  DBModel: a23504b476c3ecdca2daa1e8614fe1c598efe8bb
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  MJControllerManager: 917fee34fb310dae0d95d5be8adaddd85dbcc49b
+  MJIAPKit: efbefaebfc7c15a3b8cbc92335889bd7e81ec66b
+  MJLocalization: 26f542527ce14fc29ebc932aa8c0d96fa5d7c317
+  MJSecurity: 70fecc32816cf227333398c4f39adc1fa4807c6e
   MJWebService: 3dae6640a1d64b8409506bd5e5930c56566b2ab6
   ModuleCapability: f8ec79e6e65d096a02f8eb562b5db80b2f21a2ca
+  PromotionKit: ce70dc4bba8b5558e8acde93255596894dea368f
   WebInterface: 40066829934705ab85e4b51d3fd1f5ca19b03804
 
-PODFILE CHECKSUM: 6d8bb31f96a1fc0727158c3b87945aebafe999e8
+PODFILE CHECKSUM: 999659cf1d7cda1c9096ebcd184bcc352c369789
 
 COCOAPODS: 1.9.3

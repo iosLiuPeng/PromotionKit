@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import <PromotionKit/PromotionKit.h>
 
 @interface ViewController ()
 
@@ -15,7 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    dispatch_after(3.0, dispatch_get_main_queue(), ^{
+        [[PromotionKit sharedInstance] showVC];
+    });
+    
 }
 
 
